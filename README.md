@@ -20,5 +20,7 @@ https://angular-ui.github.io/bootstrap/
   - node_modules/angular-ui-bootstrap/dist
 - move to public/vendor
 - source in files to index.html
+- still need regular bootstrap CSS http://getbootstrap.com/getting-started/#download
+  - be sure to install the fonts! this is where our cool icons are
 - requires ngAnimate as dependency
 - inject into Angular app module

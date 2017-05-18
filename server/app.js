@@ -19,7 +19,7 @@ app.use(function(newvar, req, res, next) {
 });
 
 // Handle index file separately
-app.get('/', function(req, res) {
+app.get('/*', function(req, res) {
   res.sendFile(path.resolve('./server/public/views/index.html'));
 });
 
