@@ -55,7 +55,7 @@ Alerts are one of the most straight-forward directives to use. It binds some var
 
 ### Modals
 
-There are many solutions for inserting modal dialog boxes into your application. If you're already using Bootstrap, using their modal system makes sense. Modal dialog boxes are pretty complex in general and using thier example is difficult to wade through.
+There are many solutions for inserting modal dialog boxes into your application. If you're already using Bootstrap, using their modal system makes sense. Modal dialog boxes are pretty complex in general and using their example is difficult to wade through.
 
 Bootstrap's example code has way more than you really need to get it working. We'll cover pairing the example down to the bare-bones way to get it up and running.
 
