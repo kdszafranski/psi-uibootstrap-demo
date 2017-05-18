@@ -7,9 +7,13 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
             templateUrl: '/views/templates/home.html',
             controller: 'HomeController as hc'
         })
-        .when('/alerts', {
+        .when('/alert', {
             templateUrl: '/views/templates/alerts.html',
-            controller: 'AlertsController as ac'
+            controller: 'AlertController as ac'
+        })
+        .when('/modal', {
+            templateUrl: '/views/templates/modals.html',
+            controller: 'ModalController as mc'
         })
         .otherwise({
             redirectTo: 'home'

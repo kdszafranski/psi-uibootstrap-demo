@@ -41,6 +41,10 @@ Most of the examples on this site are using `$scope` to bind things to the DOM. 
 
 `$scope.example` becomes `vm.example`
 
+### Alerts
+
+Alerts are one of the most straight-forward directives to use. See the example code.
+
 
 ### Modals
 
