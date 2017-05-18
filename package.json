@@ -1,0 +1,18 @@
+{
+  "name": "prime-boiler-node-angular",
+  "version": "1.0.0",
+  "description": "Boilerplate starting point for node, express, angular apps",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "nodemon server/app.js",
+    "start": "node server/app.js"
+  },
+  "author": "Kris Szafranski",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-route": "^1.6.3",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0"
+  }
+}
