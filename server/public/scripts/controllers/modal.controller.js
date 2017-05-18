@@ -13,8 +13,7 @@ myApp.controller('ModalController', function($uibModal, $log) {
       animation: vm.animationsEnabled,
       ariaLabelledBy: 'modal-title',
       ariaDescribedBy: 'modal-body',
-      // templateUrl: '/public/views/templates/modal.template.html',
-      templateUrl: 'myModalContent.html',
+      templateUrl: 'myModalContent.html',   // HTML in the modal.html template
       controller: 'ModalInstanceController',
       controllerAs: 'mic',
       size: size,
@@ -26,9 +25,8 @@ myApp.controller('ModalController', function($uibModal, $log) {
       }
     });
 
-    modalInstance.result.then(function (selectedItem) {
-      vm.selected = selectedItem;
-    }, function () {
+    // log a timestamp when the modal is dismissed
+    modalInstance.result.then(function () {
       $log.info('Modal dismissed at: ' + new Date());
     });
   };
@@ -37,13 +35,13 @@ myApp.controller('ModalController', function($uibModal, $log) {
 });
 
 
+// Controls one specific modal window
 myApp.controller('ModalInstanceController', function ($uibModalInstance, title) {
   var vm = this;
 
   vm.title = title;
 
   vm.ok = function () {
-    console.log('ok click');
     $uibModalInstance.close();
   };
 
