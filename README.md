@@ -29,7 +29,7 @@ The installation instructions are pretty good but are a little hard to follow wh
 3. Source in files to index.html
 4. You still need regular bootstrap CSS   
   - [http://getbootstrap.com/getting-started/#download](http://getbootstrap.com/getting-started/#download)
-  - be sure to install the fonts! this is where our cool icons are
+  - be sure to install the fonts! this is where our cool icons are located
 
 
 ### Dependency Injection
