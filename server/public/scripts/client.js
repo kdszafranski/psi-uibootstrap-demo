@@ -1,17 +1,15 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute', 'ui.bootstrap']);
 
 myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
     $routeProvider
         .when('/home', {
             templateUrl: '/views/templates/home.html',
-            controller: 'HomeController',
-            controllerAs: 'hc'
+            controller: 'HomeController as hc'
         })
-        .when('/other', {
-            templateUrl: '/views/templates/other.html',
-            controller: 'OtherController',
-            controllerAs: 'oc'
+        .when('/alerts', {
+            templateUrl: '/views/templates/alerts.html',
+            controller: 'AlertsController as ac'
         })
         .otherwise({
             redirectTo: 'home'

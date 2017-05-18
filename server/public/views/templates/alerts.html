@@ -1,0 +1,11 @@
+<h1>Alerts</h1>
+
+<script type="text/ng-template" id="alert.html">
+  <div ng-transclude></div>
+</script>
+
+<div uib-alert ng-repeat="alert in ac.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="ac.closeAlert($index)">
+  {{alert.msg}}
+</div>
+
+<button type="button" class='btn btn-default' ng-click="ac.addAlert()">Add Alert</button>
