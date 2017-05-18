@@ -12,7 +12,7 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
             controller: 'AlertController as ac'
         })
         .when('/modal', {
-            templateUrl: '/views/templates/modals.html',
+            templateUrl: '/views/templates/modal.html',
             controller: 'ModalController as mc'
         })
         .otherwise({
